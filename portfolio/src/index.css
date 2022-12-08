@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+ body{
+   @apply bg-[#7652cc]
+   /* @apply bg-black */
+ }
+  .li{
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+
+  @keyframes bounce {
+    0%{
+        transform: translateY(-0.7rem);
+      }
+      100% {
+        
+        transform: translateY(0.8rem);
+    }
+}
+.top-2 {
+    animation: bounce 1.2s linear infinite alternate-reverse;
+}
+
+}
